@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <style>
+a:hover{
+    color:rgb(26, 156, 196);
+}
+a{
+    color:#000;
+  
+}
+[type="checkbox"]{
+    margin: 10px 0px 15px 0px;
+}
+.red-text{
+    color: rgb(255, 0, 0);
+    opacity: 0.7;
+}
+h2{
+    font-family:Lobster,monospace;
+    background-color: rgba(45,45,45,0.1);
+    padding:10px;
+    font-size:27px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+    text-transform:uppercase;
+}
+p{
+    font-size: 16px;
+    font-family:monospace;
+    line-height: 25px;
+}
+.smaller-image{
+    width: 100px;
+}
+.thick-green-border{
+    border-color: green
+    ;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+}
+.silver-background{
+    background-color: silver;
+}
+#cat-photo-form{
+    background-color: green;
+}
+
+
+    </style>
+    <h2 class="red-text">CatPhotoApp</h2>
+   <hr>
+    <main>
+        <p class="p"> <strong> here to view more cat photos
+            <a href="#">  Cat photos</a> </p>
+        
+        <a href="#"><img src="descarga.jpg" alt="gato con dinero" class="smaller-image thick-green-border"></a>
+<div class="silver-background">
+<p class="p"> <strong> <u>Top 3 things cats love:</u></strong> </p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p class="p"> <em>Top 3 things cats hate:</em></p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li><s>other cats</s></li>
+</ol> 
+</div>
+<form id="cat-photo-form"   action="fotos.html">
+<input type="text"  required placeholder="cat photo URL">
+<button type="submit">Enviar</button>
+<label for="indoor">
+    <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>indoor
+</label>
+    <label for="outdoor"></label>
+    <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">outdoor
+</label>
+<label for="loving">
+    <input id="loving" value="loving" type="checkbox" name="personality" checked >Loving
+</label>
+<label for="Feliz">
+    <input id="Feliz" value="feliz" type="checkbox" name="personality">Feliz
+</label>
+<label for="enojado">
+    <input id="enojado" value="enojado" type="checkbox" name="personality">enojado
+</label>
+</form>
+</main>
+</html>
